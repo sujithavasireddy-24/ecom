@@ -11,7 +11,7 @@ import{BrowserRouter,Routes,Route} from "react-router-dom";
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/register" element={<Register/>}/>
-            <Route path="/login" element={<Login/>}/>
+            <Route path="/Login" element={<Login/>}/>
         </Routes>
         
         </BrowserRouter>
