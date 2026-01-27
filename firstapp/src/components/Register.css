@@ -1,0 +1,97 @@
+/* ===== PAGE BACKGROUND ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a893fb, #031913);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== CENTER THE FORM ===== */
+.container.mt-4 {
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* ===== SQUARE FORM BOX ===== */
+.container.mt-4 form {
+  background: linear-gradient(135deg, #2e2417, #fcb69f);
+  padding: 40px;
+  width: 400px;    /* fixed width */
+  height: 400px;   /* fixed height = square shape */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.8s ease-in-out;
+}
+
+/* ===== FORM TITLE ===== */
+.container.mt-4 form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 26px;
+  color: #144539;
+}
+
+/* ===== FORM LABELS ===== */
+.container.mt-4 .form-label {
+  font-weight: 600;
+  color: #444;
+}
+
+/* ===== INPUT FIELDS ===== */
+.container.mt-4 .form-control {
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.container.mt-4 .form-control:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 0.2rem rgba(118, 75, 162, 0.25);
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.container.mt-4 button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.container.mt-4 button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(102, 126, 234, 0.5);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 576px) {
+  .container.mt-4 form {
+    width: 90%;
+    height: auto; /* make it flexible on small screens */
+    padding: 25px;
+  }
+}
