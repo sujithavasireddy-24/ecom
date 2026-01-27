@@ -16,7 +16,7 @@ body {
 
 /* ===== SQUARE FORM BOX ===== */
 .container.mt-4 form {
-  background: linear-gradient(135deg, #2e2417, #fcb69f);
+  background: linear-gradient(135deg, #17232e, #fcb69f);
   padding: 40px;
   width: 400px;    /* fixed width */
   height: 400px;   /* fixed height = square shape */
@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px rgba(5, 81, 120, 0.25);
   animation: slideUp 0.8s ease-in-out;
 }
 
@@ -34,13 +34,13 @@ body {
   margin-bottom: 25px;
   font-weight: 800;
   font-size: 26px;
-  color: #144539;
+  color: #023b45;
 }
 
 /* ===== FORM LABELS ===== */
 .container.mt-4 .form-label {
   font-weight: 600;
-  color: #444;
+  color: whitesmoke;
 }
 
 /* ===== INPUT FIELDS ===== */
