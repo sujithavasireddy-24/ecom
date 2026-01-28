@@ -1,20 +1,19 @@
 /* Full screen background */
-.register-bg {
+.addproduct-bg {
   min-height: 100vh;
-  background:rgb(180, 126, 144);   /* very light blue-grey */
-
+  background: url("https://static.vecteezy.com/system/resources/previews/009/925/006/original/cute-purple-aesthetic-abstract-minimal-background-perfect-for-wallpaper-backdrop-postcard-background-vector.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* Glass card */
-.register-card {
+.addproduct-card {
   width: 100%;
   max-width: 420px;
   padding: 2.5rem;
   border-radius: 12px;
-  background: rgba(237, 231, 231, 0.45);
+  background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
