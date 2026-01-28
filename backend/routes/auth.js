@@ -2,7 +2,6 @@ const express = require("express")
 const User = require("../models/User.js")
 const route = express.Router()
 const bcrypt = require("bcrypt")
-
 route.post("/create-user", async (req, res) => {
     console.log("create api")
    try {
