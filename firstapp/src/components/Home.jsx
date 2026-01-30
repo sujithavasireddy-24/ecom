@@ -10,6 +10,29 @@ export default function Home() {
   }, [])
   function addToCart(id){
     console.log(id,role)
+    const userId=localStorage.getItem("UserId")
+    if(!userId){
+      alert("Login firt to access the product")
+      return false
+    }
+    axios.post("http://localhost:4000/api/cart/add",
+      {productId,quantity:1},
+      {params:{userId}
+    })
+    .then(res=>{
+      if(res.status==200){
+        alert("Products added Successfully")
+      }
+      else{
+        alert(res.data.message)
+        
+      }
+    })
+    .catch(err=>{
+      console.log("error from add cartlogic",err)
+    })
+    
+    
   }
   async function fetchProducts() {
     axios.get("http://localhost:4000/api/product")
