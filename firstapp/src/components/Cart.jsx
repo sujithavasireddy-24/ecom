@@ -11,7 +11,7 @@ export default function Cart() {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/cart", {
+        const res = await axios.get("https://ecom-xpv5.onrender.com/api/cart", {
           params: { userId }
         });
 
