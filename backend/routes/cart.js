@@ -28,7 +28,7 @@ router.get("/",isAuthenticated,async(req,res)=>{
 
 router.post("/add",isAuthenticated,async (req,res)=>{
   const {productId,quantity}=req.body
-  console.log(productId)
+  console.log("pro-----------------",productId)
   try{
     let cart=await Cart.findOne({user:req.userId})
     console.log(productId,cart)
@@ -38,6 +38,8 @@ router.post("/add",isAuthenticated,async (req,res)=>{
     const existingItem= cart.items.find((item)=>item.product.toString()==productId) 
     if(existingItem){
       existingItem.quantity+=quantity
+      await cart.save()
+      return res.status(200).json({"message":"updated successfully"})
     }
     else{
       const product = await Product.findById(productId)
