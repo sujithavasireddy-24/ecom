@@ -1,0 +1,89 @@
+.cart-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(135deg, lavender, #f8fff3);
+  min-height: 100vh;
+}
+
+/* Title */
+.cart-title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #29578b; /* soft lavender blue */
+}
+
+/* Cart Item Card */
+.cart-card {
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #eefcff;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(150, 160, 255, 0.18);
+}
+
+/* Product name */
+.cart-product-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+/* Text inside card */
+.cart-text {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.cart-text b {
+  color: #7b8cff;
+}
+
+/* Remove button */
+.remove-btn {
+  margin-top: 10px;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #b6c5ff, #8fa8ff);
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(164, 143, 255, 0.45);
+}
+
+/* Total section */
+.cart-total {
+  margin-top: 25px;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: creamcolor;
+  background: linear-gradient(135deg, #9bfffc, #7b8cff);
+  box-shadow: 0 10px 24px rgba(123, 140, 255, 0.4);
+}
+
+/* Empty cart text */
+.cart-empty {
+  text-align: center;
+  font-size: 18px;
+  color: #94a3b8;
+}
